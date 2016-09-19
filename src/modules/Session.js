@@ -2,17 +2,14 @@
  * Created by mauriciofs on 31/08/16.
  */
 
-//const fs = require('fs');
-//const crypto = require('crypto');
-
-import fs from 'fs';
-import crypto from 'crypto'
-
-const hash = crypto.createHash('sha256');
-const sessionStorage = '../session/';
+import cookie from 'react-cookie';
 
 class Session {
     getSession(){
+        //console.log(cookie.load('userId'));
+        if(cookie.load('userId')){
+            return true;
+        }
         return false;
     }
 
@@ -20,9 +17,10 @@ class Session {
         if(user !== 'admin') return false;
 
         hash.update('some data to hash');
-        fs.open(`${sessionStorage}/${hash.digest('hex')}`, 'a+', (err, fd) => {
+        cookie.save('userId', 1, { path: '/' });
+        /*fs.open(`${sessionStorage}/${hash.digest('hex')}`, 'a+', (err, fd) => {
             
-        });
+        });*/
         return true;
     }
 }

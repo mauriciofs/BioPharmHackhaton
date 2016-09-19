@@ -1,7 +1,7 @@
 {
-  "name": "raspberry-pi-webcam",
+  "name": "bioPharm",
   "version": "1.0.0",
-  "description": "Repository for my raspebrry-pi-3",
+  "description": "Repository for BioPharm hackathon",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mauriciofs/raspberry-pi-webcam.git"
+    "url": "git+https://github.com/mauriciofs/BioPharmHackhaton.git"
   },
   "author": "Mauricio Silva <mauriciofs6@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mauriciofs/raspberry-pi-webcam/issues"
+    "url": "https://github.com/mauriciofs/BioPharmHackhaton.git/issues"
   },
-  "homepage": "https://github.com/mauriciofs/raspberry-pi-webcam#readme",
+  "homepage": "https://github.com/mauriciofs/BioPharmHackhaton.git#readme",
   "dependencies": {
+    "mongoose": "^4.6.0",
     "path": "^0.12.7",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
@@ -28,6 +29,7 @@
     "babel-core": "^6.0.20",
     "babel-eslint": "^4.1.3",
     "babel-loader": "^6.0.1",
+    "babel-plugin-react-html-attrs": "^2.0.0",
     "babel-preset-es2015": "^6.0.15",
     "babel-preset-react": "^6.0.15",
     "babel-preset-stage-0": "^6.0.15",

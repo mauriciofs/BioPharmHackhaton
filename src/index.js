@@ -4,8 +4,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory, IndexRoute } from 'react-router'
-import Routes from './components/Routes'
+import { Router, Route, hashHistory, IndexRoute } from 'react-router';
+import Routes from './components/Routes';
 
 ReactDOM.render(
     <Router routes={Routes} history={hashHistory}/>,
